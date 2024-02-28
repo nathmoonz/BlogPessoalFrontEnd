@@ -1,21 +1,22 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Footer from "./assets/components/footer/Footer";
-import Navbar from "./assets/components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
+import Navbar from "./components/navbar/Navbar";
 import Home from "./paginas/home/Home";
 import Login from "./paginas/login/Login";
 import Cadastro from "./paginas/cadastro/Cadastro";
 import { AuthProvider } from "./contexts/AuthContext";
-import ListaTemas from "./assets/components/temas/listaTemas/ListaTemas";
-import FormularioTema from "./assets/components/temas/formularioTema/FormularioTema";
-import DeletarTema from "./assets/components/temas/deletarTema/DeletarTema";
-import ListaPostagens from "./assets/components/postagens/listaPostagens/ListaPostagens";
-import FormularioPostagem from "./assets/components/postagens/formularioPostagem/FormularioPostagem";
-import DeletarPostagem from "./assets/components/postagens/deletarPostagem/DeletarPostagem";
+import ListaTemas from "./components/temas/listaTemas/ListaTemas";
+import FormularioTema from "./components/temas/formularioTema/FormularioTema";
+import DeletarTema from "./components/temas/deletarTema/DeletarTema";
+import ListaPostagens from "./components/postagens/listaPostagens/ListaPostagens";
+import FormularioPostagem from "./components/postagens/formularioPostagem/FormularioPostagem";
+import DeletarPostagem from "./components/postagens/deletarPostagem/DeletarPostagem";
 import Perfil from "./paginas/perfil/Perfil";
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  return (
+   return (
     <>
        <AuthProvider>
         <BrowserRouter>

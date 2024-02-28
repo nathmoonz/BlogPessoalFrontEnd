@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Tema from "../../../../models/Temas";
+import Tema from "../../../models/Temas";
 
 interface CardTemaProps {
   tema: Tema
@@ -22,4 +22,4 @@ function CardTemas({tema}: CardTemaProps) {
   )
 }
 
-  export default CardTemas;
+export default CardTemas;
